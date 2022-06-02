@@ -29,11 +29,6 @@ const renderAvatar = (user) => {
     }
 }
 // 退出功能
-// $("#btnLogout").click(() => {
-//     layui.layer.confirm(
-//         "确定退出登录？",
-//         { icon: 3, title: "" },
-//         function (i
 $("#btnLogout").click(() => {
     layer.confirm("是否退出？",
         {
@@ -45,3 +40,6 @@ $("#btnLogout").click(() => {
         })
 })
 getUserInfo()
+function change(){
+    $("#change").attr("class", "layui-this").next().attr("class", "")
+}
